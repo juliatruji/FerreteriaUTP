@@ -1,0 +1,95 @@
+
+<html>
+    <head>
+        <title>Registro de Códigos de Multas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css" type="text/css" media="all">
+    </head>
+    <body>
+
+        <form id="formulariocodmultas" class="formulario" action="RegistroCodMultas" method="POST">
+            <h1>Registro de Códigos de Multas de Tránsito</h1>
+            <div>
+                <label for="codfalta">Código de la falta:</label>
+                <input type="text" id="codfalta" name="codfalta" placeholder="Código de falta"/>
+
+            </div>
+            <div>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Descripción de la Falta"></textarea>
+            </div>
+            <div class="doblecolumna">
+                <div>
+                    <label for="clasificacion">Clasificación</label>
+                    <select name="clasificacion" id="clasificacion">
+                        <option value="L">Leve</option>
+                        <option value="G">Grave</option>
+                        <option value="M">Muy grave</option>
+
+                    </select>
+                </div>
+                <div>
+                    <label for="descuento">Descuento</label>
+                    <select name="descuento" id="descuento">
+                        <option value="S">Si</option>
+                        <option value="N">No</option>
+                    </select>
+                </div>
+            </div>
+            <div class="doblecolumna">
+                <div>
+                    <label for="montouit">Monto en UIT </label>
+                    <input type="number" id="montouit" name="montouit" placeholder="Porcentaje de UIT"/>
+                </div>
+                <div>
+                    <label for="puntos">Puntos</label>
+                    <input type="number" id="puntos" name="puntos" placeholder="Puntos de Licencia"/>
+                </div>
+            </div>
+
+            <div>
+                <label for="medidapreventiva">Sancion</label>
+                <select name="sancion" id="sancion">
+                    <option value="11">Ninguna</option>
+                    <option value="1">Multa y cancelacion de la licencia e inhabilitacion definitiva para obtener licencia</option>
+                    <option value="2">Multa y suspension de la licencia de conducir por tres años</option>
+                    <option value="3">Multa e inhabilitacion para obtener licencia por 3 años</option>
+                    <option value="4">Multa y suspension de licencia por 3 años si estuviese retenida o multa y cancelacion definitiva de licencia si ella estuviera suspendida</option>
+                    <option value="5">Multa y suspesion de la licencia por 1 año</option>
+                    <option value="6">Multa</option>
+                    <option value="7">Suspension de licencia por 3 años</option>
+                    <option value="8">Suspension de licencia por 1 año</option>
+                    <option value="9">Cancelacion e inhabilitacion definitiva del conductor para obtener una licencia</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="medidapreventiva">Medida Preventiva</label>
+                <select name="medidapreventiva" id="medidapreventiva">
+                    <option value="7">Ninguna</option>
+                    <option value="1">Internamiento del Vehiculo y Retencion de la Licencia</option>
+                    <option value="2">Internamiento del vehiculo</option>
+                    <option value="3">Remoción del vehículo</option>
+                    <option value="4">Retención del vehículo y retención de la licencia de conducir</option>
+                    <option value="5">Internamiento</option>
+                    <option value="8">Retencion del vehiculo</option>
+                </select>
+            </div>
+
+            <div class="doblecolumna">
+                <div><button id="registrarcodmultas" type="submit">Registrar
+                    </button>
+                </div>
+                <div><button type="reset">Borrar
+                    </button>
+                </div>
+            </div>
+        </form>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>
+

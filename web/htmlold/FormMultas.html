@@ -1,0 +1,101 @@
+
+<html>
+    <head>
+        <title>Registro de Multas de Conductores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/estilo.css" type="text/css" media="all">
+    </head>
+    <body>
+
+        <form id="formulariomultas" class="formulario" action="RegistroMultas" method="POST">
+            <h1>Registro de Multas de Conductores</h1>
+
+            <div class="doblecolumna">
+                <div>
+                    <label for="dni">DNI del Conductor</label>
+                    <input type="number" id="dni" name="dni" placeholder="DNI del Conductor"/>
+                </div> 
+
+                <div>
+                    <label for="cip">Código CIP del Policia</label>
+                    <input type="number" id="cip" name="cip" placeholder="CIP del Policia"/>
+                </div> 
+            </div> 
+
+            <div class="doblecolumna">
+                <div>
+                    <label for="multa">Código falta </label>
+                    <input type="text" id="multa" name="multa" placeholder="Código de la falta"/>
+                </div>
+                <div>
+                    <label for="fecha">Fecha </label>
+                    <input type="date" id="fecha" name="fecha" />
+                </div>
+            </div>
+
+                <div>
+                    <label for="placa">Placa</label>
+                    <input type="text" id="placa" name="placa" placeholder="Placa del Vehículo"/>
+                </div>
+
+            <div>
+                <label for="direccionr">Direccion</label>
+                <input type="text" id="direccion" name="direccion" placeholder="Escribe la direccion"/>
+            </div> 
+            
+
+            <div>
+                <label for="ubicacion">Ubicación</label>
+                <select name="ubicacion" id="ubicacion">
+                    <option value="1">Amazonas</option>
+                    <option value="2">Áncash</option>
+                    <option value="3">Apurímac</option>
+                    <option value="4">Arequipa</option>
+                    <option value="5">Ayacucho</option>
+                    <option value="6">Cajamarca</option>
+                    <option value="7">Callao</option>
+                    <option value="8">Cusco</option>
+                    <option value="9">Huancavelica</option>
+                    <option value="10">Huánuco</option>
+                    <option value="11">Ica</option>
+                    <option value="12">Junín</option>
+                    <option value="13">La Libertad</option>
+                    <option value="14">Lambayeque</option>
+                    <option value="15">Lima</option>
+                    <option value="16">Loreto</option>
+                    <option value="17">Madre de Dios</option>
+                    <option value="18">Moquegua</option>
+                    <option value="19">Pasco</option>
+                    <option value="20">Piura</option>
+                    <option value="21">Puno</option>
+                    <option value="22">San Martín</option>
+                    <option value="23">Tacna</option>
+                    <option value="24">Tumbes</option>
+                    <option value="25">Ucayali</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="observacionesconductor">Observaciones del Conductor</label>
+                <textarea id="observacionesconductor" name="observacionesconductor" placeholder="Observaciones del conductor"></textarea>
+            </div>
+            <div>
+                <label for="observacionespolicias">Observaciones del Policia</label>
+                <textarea id="observacionespolicias" name="observacionespolicias" placeholder="Observaciones del Policia"></textarea>
+            </div>   
+            <div class="doblecolumna">
+                <div><button id="registrarlistamultas" type="submit">Registrar
+                    </button>
+                </div>
+                <div><button type="reset">Borrar
+                    </button>
+                </div>
+            </div>
+        </form>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.validate.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+    </body>
+</html>

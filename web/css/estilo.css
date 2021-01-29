@@ -1,0 +1,120 @@
+@font-face {
+  font-family: Poppins;
+  src: url('../fonts/Poppins-Regular.ttf'); 
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url('../fonts/Poppins-Regular.ttf'); 
+}
+@font-face {
+  font-family: Poppins-Medium;
+  src: url('../fonts/Poppins-Medium.ttf'); 
+}
+@font-face {
+  font-family: Poppins-Bold;
+  src: url('../fonts/Poppins-Bold.ttf'); 
+}
+@font-face {
+  font-family: Poppins-SemiBold;
+  src: url('../fonts/Poppins-SemiBold.ttf'); 
+}
+
+body {
+ color:gray;
+ font-family: Poppins-Regular, sans-serif;
+ background-color: #000;
+  background: url(../img/carro.jpg) fixed;
+   background-size: cover;
+    background-position: center;
+
+}
+h1{
+    color:#000;
+    text-align: center;
+    font-family: Poppins-Bold;
+    line-height: 28px;
+    
+}
+.formulario{
+    padding: 20px;
+    width:430px;
+    margin: auto;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 0 10px #fff;
+}
+.formulario>div{
+    padding: 10px 0;
+}
+.formulario label{
+    font-size: 13px;
+}
+
+.formulario input {
+    border:0;
+    border-bottom: 1px solid #999;
+    display: block;
+    width:100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+.formulario .doblecolumna > div{
+    width:49.5%;
+    display: inline-block;
+}
+.formulario .triplecolumna > div{
+    width:32.5%;
+    display: inline-block;
+}
+.formulario textarea {
+    width: 100%;
+    min-height: 100px;
+    font-size: 17px;
+    font-family: Poppins;
+    padding: 10px;
+    border-radius: 8px;
+    outline: 0;
+    border: 1px solid gray;
+    box-shadow: 0 0 8px #666;
+}
+.formulario select {
+    box-shadow: 0 0 6px gray;
+    display: block;
+    width:100%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 8px;
+    outline:0;
+}
+.formulario button {
+    font-size: 16px;
+    padding: 10px;
+    width:100%;
+    font-family: Poppins-SemiBold, sans-serif;
+    margin: 10px 0;
+    border-radius: 12px;
+    border:2px solid #000;
+    background: #181818;
+    color:#fff;
+    cursor:pointer;
+    outline: 0;
+}
+.formulario button[type=reset] {
+    background: #880202;
+}
+.formulario button:hover {
+    background: #fff;
+    color:#000;
+}
+
+.respuesta{
+    background: #fff;
+    color:black;
+    padding: 20px;
+}
+
+
+
